@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-describe Test do
+describe RspecWithoutRails::Test do
   let(:test) do
-    Test.new
+    RspecWithoutRails::Test.new
   end
 
   before(:each) do
-    MyService.stub(:something) { 2 }
+    RspecWithoutRails::MyService.stub(:something) { 2 }
   end
 
   context "when testing" do
@@ -22,7 +22,7 @@ describe Test do
     end
 
     it "should use myservice to do something" do
-      MyService.should_receive(:something).with(no_args()).once
+      RspecWithoutRails::MyService.should_receive(:something).with(no_args()).once
 
       test.something
     end

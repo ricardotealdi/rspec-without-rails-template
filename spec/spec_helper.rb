@@ -5,7 +5,7 @@ SimpleCov.start do
 end
 
 require 'rspec'
-require File.expand_path "app/app_loader.rb"
+require File.expand_path 'app/rspec_without_rails'
 
 RSpec.configure do |config|
 

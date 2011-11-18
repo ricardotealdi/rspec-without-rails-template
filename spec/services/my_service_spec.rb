@@ -1,9 +1,9 @@
 require "spec_helper"
 
-describe MyService do
+describe RspecWithoutRails::MyService do
 
   it "should do something" do
-    MyService.something.should be(1)
+    RspecWithoutRails::MyService.something.should be(1)
   end
 
 end

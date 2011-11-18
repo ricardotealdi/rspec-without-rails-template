@@ -1,7 +1,9 @@
-class MyService
+module RspecWithoutRails
+  class MyService
 
-  def self.something
-    1
+    def self.something
+      1
+    end
+
   end
-
 end
