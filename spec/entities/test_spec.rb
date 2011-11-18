@@ -11,13 +11,14 @@ describe Test do
 
   context "when testing" do
   	it "should test" do
-  		test.testing.should eql("test")
+  		test.testing.should == "test"
   	end
   end
 
   context "when doing something" do
+
     it "should do something" do
-      test.something.should eql(2)
+      test.something.should be(2)
     end
 
     it "should use myservice to do something" do

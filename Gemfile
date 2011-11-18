@@ -5,6 +5,6 @@ gem "rake", ">= 0"
 
 group :test, :development do 
   gem "rspec", '>= 2'
-  gem "rcov", '>= 0'
+  gem "simplecov", '>= 0'
 end
 
